@@ -96,9 +96,33 @@ img {
 }
 
 /*---------Achievements-----------*/
-#achievements h2 {
-  padding: 40px 0 40px 0;
+#achievements h2,
+.poetry_list h3 {
+  padding: 50px 0 50px 0;
+  overflow: hidden;
   text-align: center;
+}
+#achievements h2:before,
+#achievements h2:after,
+.poetry_list h3:before,
+.poetry_list h3:after {
+  background: #808080;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+#achievements h2:before,
+.poetry_list h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+#achievements h2:after,
+.poetry_list h3:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 .awards {
   display: flex;
@@ -132,7 +156,6 @@ img {
 }
 
 .poetry_list {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -201,3 +224,5 @@ footer a {
     gap: 2rem;
   }
 }
+
+
