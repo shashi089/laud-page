@@ -229,6 +229,9 @@ footer span {
     align-items: center;
     gap: 1rem;
   }
+  .poetry_list ul li {
+    width: 300px;
+  }
   footer {
     padding: 50px;
     flex-direction: column;
