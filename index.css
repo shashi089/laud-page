@@ -24,8 +24,8 @@ nav ul li a {
 /*---------Header-----------*/
 
 .title {
-  padding-top: 150px;
-  height: 300px;
+  padding-top: 160px;
+  height: 350px;
   background: #000;
   text-align: center;
   color: #c7c7c7;
@@ -40,7 +40,7 @@ nav ul li a {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'abt1 image' 'abt2 image';
   gap: 4rem;
-  margin: 50px 200px 10px 250px;
+  margin: 100px 200px 10px 250px;
 }
 
 #about_1 p,
@@ -72,20 +72,22 @@ img {
 }
 
 #info button {
-  height: 30px;
-  width: 100px;
+  height: 40px;
+  width: 140px;
   font-size: 1rem;
   border: none;
-  margin: 0 10px 20px 0;
+  margin: 0 10px 50px 0;
+  color: #fff;
+  border-radius: 5px;
 }
 #info button#one {
-  background-color: grey;
+  background-color: #9c9c9c;
 }
 #info button#two {
-  background-color: red;
+  background-color: #ff0000;
 }
 #info button#three {
-  background-color: orange;
+  background-color: #e67b17;
 }
 .small_quote {
   text-align: center;
@@ -191,7 +193,16 @@ footer a {
   text-decoration: none;
   color: #282a8f;
 }
+footer .vl {
+  border-left: 1px solid #fff;
+  height: 100px;
+  width: 1px;
+  padding: 5px;
+}
 
+footer span {
+  color: #808080;
+}
 /**---------------------------Responsive Design--------------------------------------**/
 @media (max-width: 576px) {
   nav ul {
@@ -213,7 +224,7 @@ footer a {
     gap: 2rem;
   }
   .poetry_list {
-    margin-top: 50px;
+    margin: 50px 0 0 50px;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -223,6 +234,9 @@ footer a {
     flex-direction: column;
     gap: 2rem;
   }
+  footer .vl {
+    width: 100%;
+    height: 0.05px;
+    background: #fff;
+  }
 }
-
-
